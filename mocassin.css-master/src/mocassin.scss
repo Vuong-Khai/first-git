@@ -1,0 +1,48 @@
+/*!
+   Mocassin CSS v1.3.0 |  https://wideckop.github.io/mocassin.css/
+   Licensed under the MIT license
+
+   Copyright (c) 2016 Eliezer Pujols (Wideckop)
+*/
+
+// Import Essential variables
+@import "variables";
+
+// BASE STYLES
+// ====================================
+//
+// Setting styles for the caption effects.
+.mc-item,
+.mc-item > * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.mc-item {
+   position: relative;
+   > .mc-item__image,
+   > .mc-item__caption {
+      display: block;
+      transition: all $t-duration $t-timing-function;
+   }
+   > .mc-item__image {
+      width: 100%;
+   }
+	.mc-item__caption {
+		background-color: $base-color;
+	}
+}
+
+// IMPORT EFFECTS
+// ====================================
+//
+// Import all caption effects.
+// You can remove the import rules for effects you don't want.
+@import "effects/effect-1";
+@import "effects/effect-2";
+@import "effects/effect-3";
+@import "effects/effect-4";
+@import "effects/effect-5";
+@import "effects/effect-6";
+@import "effects/effect-7";
